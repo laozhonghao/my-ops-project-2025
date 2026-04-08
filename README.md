@@ -38,64 +38,21 @@ git clone https://github.com/你的用户名/linux-config-backup-tool.git
 cd linux-config-backup-tool
 chmod +x backup_config.sh
 
+# 备份到默认目录 /backup/configs
+sudo ./backup_config.sh
+
+# 备份到自定义目录
+sudo ./backup_config.sh /mnt/my_backup
+
+# 详细模式（同时输出到终端）
+sudo ./backup_config.sh -v
+
+# 查看帮助
+./backup_config.sh -h
 
 
 
 
 
 
-# 🚀 FullStack Web App with Docker Compose
-
-![Docker](https://img.shields.io/badge/Docker-20.10-blue)
-![Node.js](https://img.shields.io/badge/Node.js-14-green)
-![MySQL](https://img.shields.io/badge/MySQL-5.7-orange)
-![Nginx](https://img.shields.io/badge/Nginx-1.20-brightgreen)
-
-> 一个基于 Docker Compose 的全栈应用示例，包含：
-> - 前端：Nginx 托管静态页面
-> - 后端：Node.js + MySQL 连接池
-> - 数据库：MySQL 5.7，支持 UTF8MB4
-
-## 🧰 技术栈
-
-| 组件         | 技术                         |
-|--------------|------------------------------|
-| 前端         | HTML5 + JavaScript + Nginx   |
-| 后端         | Node.js + MySQL2             |
-| 数据库       | MySQL 5.7                    |
-| 容器化       | Docker + Docker Compose      |
-| 网络         | 自定义桥接网络               |
-
-## 🧱 架构图
-[用户] → [Nginx:80] → [Node.js:3000] → [MySQL:3306]
-
-## 🚀 快速开始
-
-### 前置条件
-- Docker (>=20.10)
-- Docker Compose (>=2.0)
-
-### 启动项目
-
-```bash
-git clone https://github.com/你的用户名/fullstack-web-app-docker-compose.git
-cd fullstack-web-app-docker-compose
-docker-compose up -d
-访问：http://localhost
-
-🔐 环境变量
-cp .env.example .env
-
-项目亮点
-✅ 完整的三层架构（前端 / 后端 / 数据库）
-
-✅ 使用 Docker Compose 一键部署
-
-✅ 支持数据库字符集 UTF8MB4（兼容 emoji）
-
-✅ 前后端分离，Nginx 反向代理
-
-✅ 生产级 Node.js 数据库连接池
-
-✅ 清晰的目录结构与工程化配置
 
